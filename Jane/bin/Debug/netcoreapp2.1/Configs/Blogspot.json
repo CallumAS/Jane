@@ -1,0 +1,27 @@
+{
+  "General": {
+    "Name": "BlogSpot",
+    "Description": "",
+    "Author": "CallumAS"
+  },
+  "Requests": [
+    {
+      "Url": "https://www.[USERNAME].blogspot.com/",
+      "Method": "GET",
+      "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Headers": null,
+      "Cookies": null,
+      "Content": "",
+      "ContentType": "",
+      "CaptureRaw": true,
+      "RegexVariables": null,
+      "GetbetweenVariables": null,
+      "SuccessKeys": [
+        "HTTP/1.1 200"
+      ],
+      "FailureKeys": [
+        "Sorry, the blog you were looking for does not exist."
+      ]
+    }
+  ]
+}

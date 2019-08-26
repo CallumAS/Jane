@@ -1,0 +1,11 @@
+C:\Users\Callum\source\repos\Jane\Jane\bin\Debug\netcoreapp2.1\Jane.deps.json
+C:\Users\Callum\source\repos\Jane\Jane\bin\Debug\netcoreapp2.1\Jane.runtimeconfig.json
+C:\Users\Callum\source\repos\Jane\Jane\bin\Debug\netcoreapp2.1\Jane.runtimeconfig.dev.json
+C:\Users\Callum\source\repos\Jane\Jane\bin\Debug\netcoreapp2.1\Jane.dll
+C:\Users\Callum\source\repos\Jane\Jane\obj\Debug\netcoreapp2.1\Jane.csprojAssemblyReference.cache
+C:\Users\Callum\source\repos\Jane\Jane\obj\Debug\netcoreapp2.1\Jane.csproj.CoreCompileInputs.cache
+C:\Users\Callum\source\repos\Jane\Jane\obj\Debug\netcoreapp2.1\Jane.AssemblyInfoInputs.cache
+C:\Users\Callum\source\repos\Jane\Jane\obj\Debug\netcoreapp2.1\Jane.AssemblyInfo.cs
+C:\Users\Callum\source\repos\Jane\Jane\bin\Debug\netcoreapp2.1\Jane.pdb
+C:\Users\Callum\source\repos\Jane\Jane\obj\Debug\netcoreapp2.1\Jane.dll
+C:\Users\Callum\source\repos\Jane\Jane\obj\Debug\netcoreapp2.1\Jane.pdb

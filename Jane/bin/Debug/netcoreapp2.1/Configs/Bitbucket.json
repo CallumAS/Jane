@@ -1,0 +1,37 @@
+{
+  "General": {
+    "Name": "Bitbucket",
+    "Description": "Grabs Full Name If Possible",
+    "Author": "CallumAS"
+  },
+  "Requests": [
+    {
+      "Url": "https://bitbucket.org/[USERNAME]/",
+      "Method": "GET",
+      "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Headers": null,
+      "Cookies": null,
+      "Content": "",
+      "ContentType": "",
+      "CaptureRaw": false,
+      "RegexVariables": null,
+      "GetbetweenVariables": [
+        {
+          "Name": "Full Name",
+          "Left": "\"display_name\": \"",
+          "Right": "\"",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        }
+      ],
+      "SuccessKeys": [
+        "\"display_name\""
+      ],
+      "FailureKeys": [
+        "That link has no power here"
+      ]
+    }
+  ]
+}

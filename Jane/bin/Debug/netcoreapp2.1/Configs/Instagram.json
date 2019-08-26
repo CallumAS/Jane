@@ -1,0 +1,48 @@
+{
+  "General": {
+    "Name": "Instagram",
+    "Description": "Grabs Full Name And Image If Possible",
+    "Author": "CallumAS"
+  },
+  "Requests": [
+    {
+      "Url": "https://www.instagram.com/[USERNAME]",
+      "Method": "GET",
+      "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Headers": null,
+      "Cookies": null,
+      "Content": "",
+      "ContentType": "",
+      "CaptureRaw": false,
+      "RegexVariables": null,
+      "GetbetweenVariables": [
+        {
+          "Name": "Full Name",
+          "Left": "\"name\":\"",
+          "Right": "\"",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Profile Image",
+          "Left": "\"profile_pic_url_hd\":\"",
+          "Right": "\"",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        }
+      ],
+      "SuccessKeys": [
+        "\"name\":\"",
+        "\"profile_pic_url_hd\":\"",
+        "ProfilePage"
+      ],
+      "FailureKeys": [
+        ">Sorry, this page isn&#39;t available.<"
+      ]
+    }
+  ]
+}

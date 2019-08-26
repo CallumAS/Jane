@@ -1,0 +1,47 @@
+{
+  "General": {
+    "Name": "9GAG",
+    "Description": "Grabs Full Name And Image If Possible",
+    "Author": "CallumAS"
+  },
+  "Requests": [
+    {
+      "Url": "https://9gag.com/u/[USERNAME]",
+      "Method": "GET",
+      "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Headers": null,
+      "Cookies": null,
+      "Content": "",
+      "ContentType": "",
+      "CaptureRaw": false,
+      "RegexVariables": null,
+      "GetbetweenVariables": [
+        {
+          "Name": "Full Name",
+          "Left": "\\\"fullName\\\":\\\"",
+          "Right": "\\",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Image",
+          "Left": "cdn.9gag.com\\\\/media\\\\/avatar\\\\/",
+          "Right": "\\\"",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "https://accounts-cdn.9gag.com/media/avatar/",
+          "Suffix": ""
+        }
+      ],
+      "SuccessKeys": [
+        "\\\"fullName\\\":\\\"",
+        "- 9GAG"
+      ],
+      "FailureKeys": [
+        ">9GAG - 404 Nothing here<"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "General": {
+    "Name": "Badoo",
+    "Description": "Grabs Name, Gender, Age, Location And Image If Possible",
+    "Author": "CallumAS"
+  },
+  "Requests": [
+    {
+      "Url": "https://badoo.com/[USERNAME]",
+      "Method": "GET",
+      "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Headers": null,
+      "Cookies": null,
+      "Content": "",
+      "ContentType": "",
+      "CaptureRaw": false,
+      "RegexVariables": [
+        {
+          "Name": "Images",
+          "Pattern": "(?<=photo-list__img_\\\"> <img src=\\\").+?(?=\\\" alt=\\\")",
+          "Prefix": "",
+          "Suffix": ""
+        }
+      ],
+      "GetbetweenVariables": [
+        {
+          "Name": "Information",
+          "Left": "<title>",
+          "Right": "</title>",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        }
+      ],
+      "SuccessKeys": [
+        "b-link js-ovl-open",
+        "\"photo-list__img_\"",
+        "profile-section qa-profile-section-location"
+      ],
+      "FailureKeys": [
+        "<title>Badoo</title>"
+      ]
+    }
+  ]
+}

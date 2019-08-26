@@ -1,0 +1,83 @@
+{
+  "General": {
+    "Name": "Ask.fm",
+    "Description": "Fullname, Profile, Location, Socials, Intrests, Answers, Likes And Picture If Possible",
+    "Author": "CallumAS"
+  },
+  "Requests": [
+    {
+      "Url": "https://ask.fm/[USERNAME]",
+      "Method": "GET",
+      "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+      "Headers": null,
+      "Cookies": null,
+      "Content": "",
+      "ContentType": "",
+      "CaptureRaw": false,
+      "RegexVariables": null,
+      "GetbetweenVariables": [
+        {
+          "Name": "Full Name",
+          "Left": "<span class=\"userName\">",
+          "Right": "<",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Location",
+          "Left": "<div class=\"icon-location\">",
+          "Right": "</div>",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Socials",
+          "Left": "<div class=\"icon-link\">",
+          "Right": "</div>",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Answers And Likes",
+          "Left": "<title>",
+          "Right": "</title>",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Intrests",
+          "Left": "<div class=\"icon-interest\">",
+          "Right": "</div>",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        },
+        {
+          "Name": "Image",
+          "Left": "<a style=\"background-image:url(",
+          "Right": "\" class=\"userMood",
+          "IncludeLeft": false,
+          "IncludeRight": false,
+          "Prefix": "",
+          "Suffix": ""
+        }
+      ],
+      "SuccessKeys": [
+        "userName",
+        "profileBox_label"
+      ],
+      "FailureKeys": [
+        "Page Not Found - ASKfm"
+      ]
+    }
+  ]
+}
